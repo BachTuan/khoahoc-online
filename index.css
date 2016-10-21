@@ -263,7 +263,7 @@
         position: absolute;
         top: 20px;
         left: 70px;
-        font-size: 20px;
+        font-size: 14px;
     }
     .body-home-son div span {
         padding: 0px;
@@ -276,7 +276,7 @@
     }
     .body-home-son div:hover {
         color: red;
-        font-size: 25px;
+        font-size: 15px;
         box-shadow: 0px 0px 20px #002b72;
     }
     .help-you {
