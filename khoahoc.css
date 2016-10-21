@@ -212,6 +212,10 @@ section {
 		width: 90%;
 		font-size: 12px;
 	}
+	#thanhtoan-khoahoc {
+		width: 60%;
+		left: 20%;
+	}
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	#menukhoahoc {
@@ -232,6 +236,11 @@ section {
 		width: 46%;
 		height: 330px;
 		margin: 2%;
+	}
+	#thanhtoan-khoahoc {
+		width: 70%;
+		top: 75px;
+		left: 15%;
 	}
 	#thanhtoan-khoahoc table td {
 		padding-left: 0;
@@ -255,6 +264,11 @@ section {
 		height: 330px;
 		margin-left: 5%;
 		margin-right: 5%;
+	}
+	#thanhtoan-khoahoc {
+		width: 96%;
+		top: 50px;
+		left: 2%;
 	}
 	#thanhtoan-khoahoc table th {
 		font-size: 14px;
