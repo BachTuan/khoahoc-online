@@ -21,7 +21,7 @@ body {
 	width: 20%;
 	float: left;
 	text-align: center;
-	font-size: 20px;
+	font-size: 1.5vw;
 	color: #3e2723;
 	line-height: 45px;
 	transition: all 0.5s;
@@ -54,6 +54,7 @@ body {
 	cursor: pointer;
 	transition: all 0.35s;
 	font-family: "Lobster";
+	font-size: 1vw;
 }
 .my-course h2 {
 	padding-top: 135px;
