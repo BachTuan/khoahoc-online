@@ -2,30 +2,28 @@
 <html>
 <head>
 	<title>TechMaster</title>
-	<meta charset="utf-8">
-	<meta type="viewport" content="=devide-width,initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="quanlykhoahoc.css">
 </head>
 <body>
-	<header>
-        <div id="header-first">
-            <div id="logo"><a href="index.html"><img src="img/logo.png" alt="logo techmaster"/></a></div>
-            <div><input type="search" name="tìm kiếm" placeholder="Tìm kiếm"> <div><img src="img/search.png"/></div></div>
-            <div class="login-name" onclick="">Bạch Thanh Tuấn</div>
-            <div class="login-name" onclick=""><img src="img/user.png"></div>
+    <div id="header">
+        <div id="menu">
+            <a href="index.html"><div class="menu">HOME</div></a>
+            <div class="menu" id="khoahoc" onclick="khoahocshow()">KHÓA HỌC</div>
+            <div class="menu" id="taikhoan" onclick="taikhoanshow()">TÀI KHOẢN</div>
+            <div class="menu" id="giaodich" onclick="giaodichshow()">GIAO DỊCH</div>
+            <div class="menu" id="xephang">XẾP HẠNG</div>
         </div>
-        <div id="bignav">
-            <div id="toggle" onclick="showmenu()">
-                <img src="img/menu-icon.png"/>
-            </div>
-            <div class="nav"><a href="index.html" class="menu"><div>TRANG CHỦ</div></a><a href="khoahoc.html" class="menu" id="nav-son"><div>KHÓA HỌC</div></a><a href="#" class="menu"><div>TIN TỨC - BLOG</div></a><a href="#" class="menu"><div>TƯ VẤN - GIẢI ĐÁP</div></a>
-            </div>
-        </div>
-    </header>
-    <div class="clear"></div>
+    </div>
+    <div id="content-quanly">
+        <div class="my-course"><h2>Khóa Học HTML/CSS/JS</h2><p>Tác giả: Đặng QUang Huy</p></div>
+        <div class="my-course"><h2>Khóa Học IOS</h2><p>Tác giả: Trịnh Minh Cường</p></div>
+        <div class="my-course"><h2>Khóa Học PHP</h2><p>Tác giả: Thân Văn Nghĩa</p></div>
+        <div class="my-course"><h2>Khóa Học NODEJS</h2><p>Tác giả: Phan Đức Việt</p></div>
+    </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="quanlykhoahoc.js" type="text/javascript"></script>
 </body>
 </html>
