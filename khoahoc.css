@@ -213,7 +213,7 @@ section {
 		font-size: 12px;
 	}
 }
-@media only screen and (min-width: 569px) and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
 	#menukhoahoc {
 		width: 15%;
 		float: right;
@@ -241,7 +241,7 @@ section {
 		font-size: 12px;
 	}
 }
-@media only screen and (max-width: 568px) {
+@media only screen and (max-width: 479px) {
 	#menukhoahoc {
 		width: 25%;
 		float: right;

@@ -10,28 +10,22 @@
     <link rel="stylesheet" type="text/css" href="quanlykhoahoc.css">
 </head>
 <body>
-	<header></header>
-    <section>
-        <div id="quanlykhoahoc"><p>QUẢN LÝ KHÓA HỌC</p></div>
-        <div id="tieude-quanly">
-            <div id="tab-khoahoc" class="taikhoancuatoi" style="background-color:#e8e0d3;">Khóa Học</div>
-            <div id="tab-thongtin" class="taikhoancuatoi">Thông Tin</div>
-            <div id="tab-giaodich" class="taikhoancuatoi">Giao Dịch</div>
+	<header>
+        <div id="header-first">
+            <div id="logo"><a href="index.html"><img src="img/logo.png" alt="logo techmaster"/></a></div>
+            <div><input type="search" name="tìm kiếm" placeholder="Tìm kiếm"> <div><img src="img/search.png"/></div></div>
+            <div class="login-name" onclick="">Bạch Thanh Tuấn</div>
+            <div class="login-name" onclick=""><img src="img/user.png"></div>
         </div>
-        <div id="noidung-quanly">
-            <a href="chitietkhoahoc.html"><div class="box-course">
-                <h2>KHÓA HỌC HTML/CSS/JS</h2>
-                <p>Tác giả: ĐẶNG QUANG HUY</p>
-            </div></a>
-            <a href="#"><div class="box-course">
-                <h2>KHÓA HỌC IOS/SWITF</h2>
-                <p>Tác giả: TRỊNH MINH CƯỜNG</p>
-            </div></a>
+        <div id="bignav">
+            <div id="toggle" onclick="showmenu()">
+                <img src="img/menu-icon.png"/>
+            </div>
+            <div class="nav"><a href="index.html" class="menu"><div>TRANG CHỦ</div></a><a href="khoahoc.html" class="menu" id="nav-son"><div>KHÓA HỌC</div></a><a href="#" class="menu"><div>TIN TỨC - BLOG</div></a><a href="#" class="menu"><div>TƯ VẤN - GIẢI ĐÁP</div></a>
+            </div>
         </div>
-    </section>
+    </header>
     <div class="clear"></div>
-	<footer></footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="main-login.js"></script>
 </body>
 </html>
