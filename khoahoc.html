@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TechMaster</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="khoahoc.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <header>
+        <div id="header-first">
+            <div id="logo"><a href="index.html"><img src="img/logo.png" alt="logo techmaster"/></a></div>
+            <div><input type="search" name="tìm kiếm" placeholder="Tìm kiếm"> <div><img src="img/search.png"/></div></div>
+            <div class="login" onclick="dangkyshow(), dangnhaphide()">ĐĂNG KÝ</div>
+            <div class="login" onclick="dangnhapshow(), dangkyhide()">ĐĂNG NHẬP</div>
+        </div>
+        <div id="bignav">
+            <div id="toggle" onclick="showmenu()">
+                <img src="img/menu-icon.png"/>
+            </div>
+            <div class="nav"><a href="index.html" class="menu"><div>TRANG CHỦ</div></a><a href="khoahoc.html" class="menu" id="nav-son"><div>KHÓA HỌC</div></a><a href="#" class="menu"><div>TIN TỨC - BLOG</div></a><a href="#" class="menu"><div>TƯ VẤN - GIẢI ĐÁP</div></a>
+            </div>
+        </div>
+    </header>
+	<div id="banner">
+		<div class="wrap">
+            <h1 class="title">Chào mừng bạn đến với trang khóa học của TechMaster</h1>
+            <p class="desc">
+            	Hãy lựa chọn khóa học cho mình, nắm trong tay tương lai của chính bạn.
+            	<br>
+            	Nếu bạn còn phân vân chưa lựa chọn được khóa học cho bản thân, hãy kết nối với trang tư vấn của TechMaster
+            </p>
+        </div>
+	</div>
+	<div id="big-section">
+		<section>
+        <div id="menukhoahoc">
+        	<div id="tatca" onclick="tatcakhoahoc()">Tất Cả</div>
+        	<div id="coban" onclick="basic()">Cơ Bản</div>
+        	<div id="hethong" onclick="system()">Hệ Thống</div>
+        	<div id="mobile" onclick="didong()">Mobile</div>
+        	<div id="wed" onclick="site()">Wed</div>	
+        </div>
+        <div id="danhsachkhoahoc">
+        </div>
+    	</section>
+	</div>
+    <div class="clear"></div>
+	<footer></footer>
+	<div id="login-res"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="khoahoc.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

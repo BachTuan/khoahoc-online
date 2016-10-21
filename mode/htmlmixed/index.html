@@ -1,0 +1,35 @@
+<!doctype html>
+
+<title>CodeMirror: HTML mixed mode</title>
+<meta charset="utf-8"/>
+<link rel=stylesheet href="../../doc/docs.css">
+
+<link rel="stylesheet" href="../../lib/codemirror.css">
+<script src="../../lib/codemirror.js"></script>
+<script src="../../addon/selection/selection-pointer.js"></script>
+<script src="../xml/xml.js"></script>
+<script src="../javascript/javascript.js"></script>
+<script src="../css/css.js"></script>
+<script src="../vbscript/vbscript.js"></script>
+<script src="htmlmixed.js"></script>
+<style>.CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}</style>
+
+<article>
+<form><textarea id="code" name="code">
+</textarea></form>
+    <script>
+      // Define an extended mixed-mode that understands vbscript and
+      // leaves mustache/handlebars embedded templates in html mode
+      var mixedMode = {
+        name: "htmlmixed",
+        scriptTypes: [{matches: /\/x-handlebars-template|\/x-mustache/i,
+                       mode: null},
+                      {matches: /(text|application)\/(x-)?vb(a|script)/i,
+                       mode: "vbscript"}]
+      };
+      var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+        mode: mixedMode,
+        selectionPointer: true
+      });
+    </script>
+  </article>

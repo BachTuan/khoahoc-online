@@ -1,0 +1,108 @@
+html {
+	height: 100%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	background: #282828;
+}
+#noidungkhoahoc {
+	width: 50%;
+	min-height: 100%;
+	max-height: auto;
+	background-color: #eaf2ff;
+	padding: 5%;
+	text-align: justify;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+#noidungkhoahoc h1 {
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}
+#noidungkhoahoc h3 {
+	text-decoration: underline;
+}
+.click {
+	width: 5%;
+	height: 30px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	line-height: 30px;
+	color: white;
+	font-size: 20px;
+	font-family: Times;
+	cursor: pointer;
+	background-color: #002259;
+	transition: background 0.5s;
+}
+.click:hover {
+	background-color: red;
+}
+.demuc {
+	width: 25%;
+	height: 80%;
+	overflow-x:hidden;
+	transition: max-width 0.5s;
+	cursor: pointer;
+	position: fixed;
+	top: 30px;
+	left: 0px;
+	font-size: 18px;
+	background-color: #002259;;
+	font-family: Times;
+	transition: width 0.5s;
+	transition: font-size 0.5s;
+	display: none;
+}
+.showdemuc {
+	display: block;
+}
+.lesson {
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-bottom: 1px solid #12345a;
+	color: white;
+	transition: background-color 1s;
+}
+.lesson:hover {
+	background-color: red;
+	color: #3c5b0d;
+}
+#result {
+	width: 49.5%;
+	height: 50%;
+	position: fixed;
+	top: 0px;
+	right: 0.5%;
+	background: white;
+	overflow-x:hidden;
+	border: none;
+	padding: 0px;
+	font-family: Serif;
+}
+#run {
+	width: 6%;
+	height: 25px;
+	background-color: #002259;
+	position: fixed;
+	top: 50%;
+	right: 0.5%;
+	z-index: 5;
+	color: white;
+	text-align: center;
+	font-size: 15px;
+	cursor: pointer;
+	transition: background-color 0.5s;
+}
+#run:hover {
+	background-color: red;
+}

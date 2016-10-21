@@ -1,0 +1,301 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0px auto;
+	font-family: 'Trirong', serif;
+}
+header {
+	height: 130px;
+	margin: 0px auto;
+}
+.clear {
+	clear: both;
+}
+#header-first {
+	width: 100%;
+	height: 90px;
+}
+#logo {
+	height: 90px;
+	float: left;
+}
+#header-first input {
+	width: 30%;
+	height: 40px;
+	float: left;
+	margin-left: 20%;
+	font-size: 15px;
+	border-radius: 10px;
+	position: relative;
+	top: 25px;
+}
+#header-first div div img {
+	float: left;
+	cursor: pointer;
+}
+.login {
+	width: 100px;
+	height: 90px;
+	line-height: 90px;
+	text-align: center;
+	float: right;
+	cursor: pointer;
+	font-size: 15px;
+	transition: all 0.5s;
+}
+.login:hover {
+	background: #e65100;
+	color: white;
+	font-weight: bold;
+}
+.login-name {
+	width: auto;
+	height: 90px;
+	line-height: 90px;
+	float: right;
+	font-size: 15px;
+}
+#bignav {
+	width: 100%;
+	height: 40px;
+	background-color: #e65100;
+}
+#toggle {
+	float: right;
+	height: 40px;
+	cursor: pointer;
+	display: none;
+}
+#toggle:hover {
+	background: #dd2c00;
+}
+.nav {
+	max-width: 1100px;
+	min-width: 320px;
+	background-color: #e65100;
+	max-height: 40px;
+	margin: auto;
+}
+.menu {
+	width: 25%;
+	height: 40px;
+	float: left;
+	text-align: center;
+	line-height: 40px;
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	transition: all 1s;
+}
+.menu:hover {
+	background-color: yellow;
+	color: black;
+	font-weight: bold;
+}
+footer {
+	height: 250px;
+	background-color: #232322;
+	position: relative;
+}
+#foot {
+	max-width: 1280px;
+	min-width: 320px;
+	margin: 0px auto;
+}
+footer img {
+	position: absolute;
+	bottom: 5px;
+	right: 10px;
+	cursor: pointer;
+}
+#address, #contact, #information {
+	color: white;
+	text-align: center;
+	width: 33.33%;
+	padding: 10px;
+	float: left;
+}
+#dangnhap, #dangky {
+	width: 400px;
+	height: 400px;
+	border: 1px solid #ccc;
+	box-shadow: 0px 0px 5px #ccc;
+	text-align: center;
+	background-color:white;
+	color: #e65100;
+	position: fixed;
+	top: 100px;
+	left: 35%;
+	z-index: 3;
+	display: none;
+}
+.nhapvao {
+	width: 350px;
+	height: 30px;
+	margin-top: 10px;
+}
+.nutbam {
+	width: 150px;
+	height: 30px;
+	color: #e65100;
+	font-weight: bold;
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    header {
+    	width: 100%;
+    	height: 130px;
+    }
+    #toggle {
+    	display: block;
+    }
+    .nav {
+    	width: 100%;
+    	max-height: 0px;
+    	overflow: hidden;
+    	background-color: #e65100;
+    }
+	.menu {
+		width: 100%;
+		max-height: 0px;
+		background-color: #e65100;
+		position: relative;
+		z-index: 1;
+	}
+	 #banner .title {
+    	text-align: center;
+    	font-size: 40px;
+    }
+    #banner .slogan {
+    	text-align: center;
+    	font-size: 25px;
+	}
+}
+@media only screen and (min-width: 569px) and (max-width: 767px) {
+    header {
+    	width: 100%;
+    	height: 130px;
+    }
+    #logo {
+		float: none;
+		text-align: center;
+	}
+    .login {
+    	display: none;
+    }
+    .login-name {
+    	display: none;
+    }
+    #toggle {
+    	display: block;
+    }
+    .nav {
+    	width: 100%;
+    	max-height: 0px;
+    	overflow: hidden;
+    	background-color: #e65100;
+    }
+	.menu {
+		width: 100%;
+		max-height: 0px;
+		background-color: #e65100;
+		position: relative;
+		z-index: 1;
+	}
+	#banner .title {
+    	text-align: center;
+    	font-size: 25px;
+    	margin: 0px;
+    	padding: 0px;
+    }
+    #banner .slogan {
+    	text-align: justify;
+    	font-size: 20px;
+    	margin: 0px;
+    	padding: 0px;
+	}
+	.dangky {
+		display: none;
+	}
+	.wrap {
+	    max-width: 1280px;
+	    min-width: 320px;
+	    margin: 0px auto;
+	    padding-top: 10px;
+	    padding-bottom: 15px;
+	    text-shadow:3px 3px 8px blue;
+	}
+	#header-first input, #header-first div div img {
+		display: none;
+	}
+	footer {
+		height: 550px;
+	}
+	#address, #contact, #information {
+		width: 80%;
+		margin: auto;
+		float: none;
+		padding: 0px;
+	}
+	#dangnhap, #dangky {
+		top: 75px;
+		left: 20%;
+	}
+}
+@media only screen and (max-width: 568px) {
+    header {
+    	width: 100%;
+    	height: 130px;
+    }
+    #logo {
+		float: none;
+		text-align: center;
+	}
+    .login {
+    	display: none;
+    }
+    .login-name {
+    	display: none;
+    }
+    #toggle {
+    	display: block;
+    }
+    .nav {
+    	width: 100%;
+    	max-height: 0px;
+    	overflow: hidden;
+    	background-color: #e65100;
+    }
+	.menu {
+		width: 100%;
+		max-height: 0px;
+		background-color: #e65100;
+		position: relative;
+		z-index: 6;
+	}
+	#banner {
+        display: none;
+    }
+	#header-first input, #header-first div div img {
+		display: none;
+	}
+	footer {
+		height: 550px;
+	}
+	#address, #contact, #information {
+		width: 80%;
+		margin: auto;
+		float: none;
+		padding: 0px;
+	}
+	#dangnhap, #dangky {
+		top: 50px;
+		left: 30px;
+	}
+}
+.height160 {
+	max-height: 160px;
+}
+.height40 {
+	max-height: 40px;
+}
