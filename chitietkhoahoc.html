@@ -1,18 +1,19 @@
-<!doctype html>
-<html lang="vi">
+<!DOCTYPE HTML>
+<html>
 <head>
-	<title>Chi Tiết Khóa Học</title>
 	<meta charset="utf-8">
 	<link rel=stylesheet href="doc/docs.css">
-	<script src="lib/codemirror.js"></script>
-	<link rel="stylesheet" href="lib/codemirror.css">
-	<script src="mode/javascript/javascript.js"></script>
-	<script src="mode/css/css.js"></script>
-	<script src="mode/htmlmixed/htmlmixed.js"></script>
-	<script src="mode/vbscript/vbscript.js"></script>
-	<script src="addon/selection/selection-pointer.js"></script>
+	<script type="text/javascript" src="lib/codemirror.js"></script>
+	<link rel="stylesheet" type="text/css" href="lib/codemirror.css">
+	<link rel="stylesheet" type="text/css" href="theme/monokai.css">
+	<script type="text/javascript" src="addon/selection/selection-pointer.js"></script>
+	<script type="text/javascript" src="mode/javascript/javascript.js"></script>
 	<script src="mode/xml/xml.js"></script>
+	<script type="text/javascript" src="mode/htmlmixed/htmlmixed.js"></script>
+	<script type="text/javascript" src="mode/css/css.js"></script>
+	<script type="text/javascript" src="mode/vbscript/vbscript.js"></script>
 	<link rel="stylesheet" type="text/css" href="chitietkhoahoc.css">
+	<title>Chi Tiết Khóa Học</title>
 </head>
 <body>
 <div id="noidungkhoahoc">
@@ -28,8 +29,12 @@
 	<p>+Phần tiêu đề: Phần tiêu đề bắt đầu bằng thẻ &#60;head&#62; và kết thúc bởi thẻ &#60;/head&#62;. Phần này chứa tiêu đề mà được hiển thị trên thanh điều hướng của trang Web. Tiêu đề nằm trong thẻ title, bắt đầu bằng thẻ &#60;title&#62; và kết thúc là thẻ &#60;/title&#62;. Tiêu đề là phần khá quan trọng. Khi người dùng tìm kiếm thông tin, tiêu đề của trang Web cung cấp từ khóa chính yếu cho việc tìm kiếm.</p>
 	<p>+Phần thân: phần này nằm sau phần tiêu đề. Phầ̀n thân bao gồm văn bản, hình ảnh và các liên kết mà bạn muốn hiển thị trên trang web của mình. Phần thân bắt đầu bằng thẻ &#60;body&#62; và kết thúc bằng thẻ &#60;/body&#62;</p>
 </div>
-	<span onclick="show()" class="click">Bài Học</span>
-	<div class="demuc">
+	<div class="click">
+		<span onclick="show()" class="click-son">Lý Thuyết</span>
+		<span onclick="thuchanh()" class="click-son">Thực Hành</span>
+		<span onclick="rank()" class="click-son">Ranking</span>
+	</div>
+	<div id="lythuyet" class="demuc">
 		<div class="lesson" onclick="bai1(),show()">Bài 1: Giới Thiệu Về HTML</div>
 		<div class="lesson" onclick="bai2(),show()">Bài 2: Ứng dụng về HTML đầu tiên</div>
 		<div class="lesson">Bài 3: Các thẻ trong HTML</div>
@@ -67,36 +72,134 @@
 		<div class="lesson">Bài 15: Style và phong cách wed hiện đại</div>
 		<div class="lesson">Bài 15: Style và phong cách wed hiện đại</div>
 	</div>
-<span onclick="inketqua()" id="run">Run</span>
-<textarea id="code" name="code">
-<!DOCTYPE html>
-<html>
-<head>
-<title>Tuan</title>
-<style></style>
-</head>
-<body>
-<script></script>
-</body>
-</html>
-</textarea>
-    <script>
-      // Define an extended mixed-mode that understands vbscript and
-      // leaves mustache/handlebars embedded templates in html mode
-      var mixedMode = {
-        name: "htmlmixed",
-        scriptTypes: [{matches: /\/x-handlebars-template|\/x-mustache/i,
-                       mode: null},
-                      {matches: /(text|application)\/(x-)?vb(a|script)/i,
-                       mode: "vbscript"}]
-      };
-      var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
-        mode: mixedMode,
-        selectionPointer: true
-      });
-    </script>
+	<div id="thuchanh" class="demuc">
+		<div class="lesson" onclick="thuchanh1(),thuchanh()">Bài Thực Hành 1: Tạo trang html đơn giản</div>
+		<div class="lesson">Bài Thực Hành 2: Thực hành selector</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
+	</div>
+<span onclick="inketqua()" id="runcode">RUN CODE</span>
     <div id="result"></div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="chitietkhoahoc.js"></script>
+	<div id="codeeditor"></div>
+	<script>
+		var mixedMode = {
+	        name: "htmlmixed",
+	        scriptTypes: [{matches: /\/x-handlebars-template|\/x-mustache/i,
+	                       mode: null},
+	                      {matches: /(text|application)\/(x-)?vb(a|script)/i,
+	                       mode: "vbscript"}]
+	      };
+		var editor = CodeMirror(document.getElementById("codeeditor"), {
+			mode : mixedMode,
+			theme : "monokai",
+			tabSize: 5
+		});
+	</script>
+	<div id="wrap">
+		<input type="button" id="clickquiz" value="Start" onclick="chuyencau()">
+		<input type="button" id="clickquiz" value="x" onclick="hidequiz()" style="float: right;">
+		<div id="cauhoi">Ấn start để bắt đầu bài quiz</div>
+		<input type="button" id="dapanA" class="dapan" value="" onclick='traloi(document.getElementById("cauhoi").innerHTML, this.value)'/>
+		<input type="button" id="dapanB" class="dapan" value="" onclick='traloi(document.getElementById("cauhoi").innerHTML, this.value)'/>
+		<input type="button" id="dapanC" class="dapan" value="" onclick='traloi(document.getElementById("cauhoi").innerHTML, this.value)'/>
+		<input type="button" id="dapanD" class="dapan" value="" onclick='traloi(document.getElementById("cauhoi").innerHTML, this.value)'/>
+		<div id="result-quiz"></div>
+	</div>
+	<script type="text/javascript">
+	var cau1 = {
+		cauhoi:"Chọn định nghĩa SAI về HTML", dapanA:"Ngôn ngữ hiển thị mặc định của HTML không phải là tiếng Việt", dapanB:"HTML là ngôn ngữ trình bày trang web", dapanC:"Tài liệu HTML được tạo nên từ các thẻ", dapanD:"Phiên bản HTML mới nhất là HTML 5",
+	};
+	var cau2 = {
+		cauhoi:"Theo tiêu chuẩn mới nhất của HTML5 thi khai báo doctype chuẩn là", dapanA:"!DOCTYPE html", dapanB:"!DOCTYPE html5", dapanC:"!DOCTYPE htmlnew", dapanD:"!DOCTYPE",
+	};
+	var cau3 = {
+		cauhoi:"Thẻ nào dùng để định nghĩa danh sách có thứ tự?", dapanA:"ul", dapanB:"al", dapanC:"ol", dapanD:"el",
+	};
+	var cau4 = {
+		cauhoi:"Đoạn HTML sau đây thêm màu nền cho trang là màu gì? <br> body {color:red;background-color:yellow;}", dapanA:"Đỏ", dapanB:"Đỏ và Vàng", dapanC:"Không màu", dapanD:"Vàng",
+	};
+	var mang = [cau1, cau2, cau3, cau4];
+	var a = 0;
+	function chuyencau() {
+		if (a <= mang.length - 1) {
+			document.getElementById("cauhoi").innerHTML = mang[a].cauhoi;
+			document.getElementById("dapanA").value = mang[a].dapanA;
+			document.getElementById("dapanB").value = mang[a].dapanB;
+			document.getElementById("dapanC").value = mang[a].dapanC;
+			document.getElementById("dapanD").value = mang[a].dapanD;
+			document.getElementById("clickquiz").value = "Tiếp Tục";
+			document.getElementById('result-quiz').innerHTML = "";
+		}
+		else {
+			document.getElementById('result-quiz').innerHTML = "Bạn đã kết thúc bài quiz! Ấn start để bắt đầu lại";
+			a = -1;
+			document.getElementById("clickquiz").value = "Start";
+			document.getElementById('result-quiz').innerHTML = "";
+		}
+		a=a+1;
+	}
+	function traloi(aa,b) {
+		if (aa==cau1.cauhoi) {
+			if (b==cau1.dapanA) {
+				document.getElementById('result-quiz').innerHTML = "CHÍNH XÁC";
+			}
+			else {
+				document.getElementById('result-quiz').innerHTML = "SAI :((";
+			}
+		}
+		if (aa==cau2.cauhoi) {
+			if (b==cau2.dapanB) {
+				document.getElementById('result-quiz').innerHTML = "CHÍNH XÁC";
+			}
+			else {
+				document.getElementById('result-quiz').innerHTML = "SAI :((";
+			}
+		}
+		if (aa==cau3.cauhoi) {
+			if (b==cau3.dapanC) {
+				document.getElementById('result-quiz').innerHTML = "CHÍNH XÁC";
+			}
+			else {
+				document.getElementById('result-quiz').innerHTML = "SAI :((";
+			}
+		}
+		if (aa==cau4.cauhoi) {
+			if (b==cau4.dapanD) {
+				document.getElementById('result-quiz').innerHTML = "CHÍNH XÁC";
+			}
+			else {
+				document.getElementById('result-quiz').innerHTML = "SAI :((";
+			}
+		}
+	}
+</script>
 </body>
 </html>

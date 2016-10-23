@@ -1,5 +1,8 @@
 function show() {
-	$('.demuc').toggleClass('showdemuc');
+	$('#lythuyet').toggleClass('showdemuc');
+}
+function thuchanh() {
+	$('#thuchanh').toggleClass('showdemuc');
 }
 document.getElementById('result').innerHTML = $('.CodeMirror-code').text()
 function inketqua() {
@@ -10,4 +13,16 @@ function bai1() {
 }
 function bai2() {
 	document.getElementById('noidungkhoahoc').innerHTML = '<h1>BÀI 2: CÁC THẺ HTML CƠ BẢN</h1><h3> Thẻ Headings (Tiêu đề)</h3><p>Phần tử này được sử dụng để trình bày tiêu đề cho phần nội dung hiển thị trên trang web. Những phần tiêu đề được hiển thị to và in đậm hơn để phân biệt chúng với các phần còn lại của văn bản. Chúng ta cũng có thể hiển thị phần tiêu đề theo một trong sáu kích thước từ h1 đến h6. Tất cả những gì chúng ta làm là định rõ kích thước h1, h2… Thẻ H1 dành cho các tiêu đề quan trọng nhất và giảm dần đến h6.</p><iframe width="560" height="315" src="https://www.youtube.com/embed/f34M4D5KbXI" frameborder="0" allowfullscreen></iframe><h3> Thẻ P (Đoạn văn)</h3><p> Là thẻ trình bày đoạn văn trong html</p><iframe width="560" height="315" src="https://www.youtube.com/embed/9ZooNOtCuZ0" frameborder="0" allowfullscreen></iframe>';
+}
+function thuchanh1() {
+	document.getElementById('noidungkhoahoc').innerHTML = '<h2>I.Quiz</h2><button onclick="showquiz()">Quiz</button><h2>II.LAB</h2><p>Hãy tạo 1 trang wed với 1 tiêu đề và 1 đoạn văn</p><p>Gợi ý: DÙng thẻ h1 và thẻ p </p>';
+}
+function rank() {
+	document.getElementById('noidungkhoahoc').innerHTML = '<table id="bangrank"> <tr> <td>HỌ TÊN</td> <td>THÀNH TÍCH</td> <td>HẠNG</td> </tr> <tr> <td>USER</td> <td>1234 Điểm</td> <td><img src="img/diamond.png"><p>Kim Cương</p></td> </tr> <tr> <td>USER</td> <td>1234 Điểm</td> <td><img src="img/diamond.png"><p>Kim Cương</p></td> </tr> <tr> <td>USER</td> <td>1234 Điểm</td> <td><img src="img/diamond.png"><p>Kim Cương</p></td> </tr> <tr> <td>USER</td> <td>1234 Điểm</td> <td><img src="img/diamond.png"><p>Kim Cương</p></td> </tr> <tr> <td>USER</td> <td>1234 Điểm</td> <td><img src="img/diamond.png"><p>Kim Cương</p></td> </tr> <tr> <td>USER</td> <td>1234 Điểm</td> <td><img src="img/diamond.png"><p>Kim Cương</p></td> </tr> </table>'
+}
+function showquiz() {
+	$('#wrap').css('display','block');
+}
+function hidequiz() {
+	$('#wrap').css('display','none');
 }

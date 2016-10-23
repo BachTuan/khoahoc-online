@@ -71,7 +71,7 @@ header {
 	background: #dd2c00;
 }
 .nav {
-	max-width: 1100px;
+	max-width: 1000px;
 	min-width: 320px;
 	background-color: #e65100;
 	max-height: 40px;
@@ -85,7 +85,7 @@ header {
 	line-height: 40px;
 	color: white;
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 16px;
 	transition: all 0.5s;
 }
 .menu:hover {

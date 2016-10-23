@@ -6,13 +6,12 @@ body {
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
-	background: #282828;
 }
 #noidungkhoahoc {
 	width: 50%;
 	min-height: 100%;
 	max-height: auto;
-	background-color: #eaf2ff;
+	background-color: #e1f5fe;
 	padding: 5%;
 	text-align: justify;
 	box-sizing: border-box;
@@ -27,58 +26,57 @@ body {
 	text-decoration: underline;
 }
 .click {
-	width: 5%;
+	width: 50%;
 	height: 30px;
 	position: fixed;
 	top: 0px;
 	left: 0px;
 	padding: 0px;
 	margin: 0px;
-	text-align: center;
-	line-height: 30px;
 	color: white;
-	font-size: 1vw;
+	font-size: 1.5vw;
 	font-family: Times;
 	cursor: pointer;
 	background-color: #002259;
 	transition: all 0.35s;
-	box-shadow: 0px 0px 5px black;
+	box-shadow: 0px 0px 8px black;
 }
-.click:hover {
-	background-color: red;
+.click-son {
+	width: 33.33%;
+	text-align: center;
+	float: left;
+	transition: all 0.35s;
 }
-.click:active {
-	background-color: #aa00ff;
+.click-son:hover {
+	background: red;
 }
 .demuc {
-	width: 25%;
-	height: 80%;
+	width: 40%;
+	height: 0;
 	overflow-x:hidden;
-	transition: max-width 0.5s;
 	cursor: pointer;
 	position: fixed;
 	top: 30px;
 	left: 0px;
 	font-size: 18px;
-	background-color: #01579b;
+	background-color: #e1f5fe;
 	font-family: Times;
-	transition: width 0.5s;
-	transition: font-size 0.5s;
-	display: none;
+	transition: all 0.35s ease-in;
 }
 .showdemuc {
-	display: block;
+	height: 80%;
 }
 .lesson {
 	text-align: left;
 	padding-left: 10px;
 	padding-right: 10px;
 	border-bottom: 1px solid #12345a;
-	color: white;
-	transition: all 0.5s;
+	color: black;
+	transition: all 0.5s ease;
 }
 .lesson:hover {
-	background-color: #002259;
+	font-weight: bold;
+	background: #40c4ff;
 }
 #result {
 	width: 49.5%;
@@ -92,20 +90,79 @@ body {
 	padding: 0px;
 	font-family: Serif;
 }
-#run {
-	width: 6%;
+#runcode {
+	width: 8%;
 	height: 25px;
-	background-color: #002259;
+	background-color: red;
 	position: fixed;
 	top: 50%;
 	right: 0.5%;
 	z-index: 5;
 	color: white;
 	text-align: center;
+	line-height: 25px;
 	font-size: 15px;
 	cursor: pointer;
-	transition: background-color 0.5s;
+	font-family: Times;
 }
-#run:hover {
-	background-color: red;
+#wrap {
+	width: 46%;
+	height: 400px;
+	border: 1px solid #ccc;
+	display: none;
+	position: fixed;
+	left: 2%;
+	top: 100px;
+	background: white;
+}
+#cauhoi {
+	width: 100%;
+	height: 100px;
+	text-align: left;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	padding-top: 5px;
+	padding-left: 5px;
+	color: blue;
+}
+#result-quiz {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	line-height: 50px;
+	color: red;
+}
+.dapan {
+	width: 100%;
+	height: 50px;
+	text-align: left;
+	line-height: 100px;
+	padding-left: 10px;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 16px;
+}
+#bangrank {
+	width: 96%;
+	margin: auto;
+}
+#bangrank td {
+	width: 33.33%;
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	text-align: center;
+	color: red;
+	font-weight: bold;
+}
+#bangrank img {
+	width: 100px;
+	height: 100px;
+}
+#bangrank p {
+	margin: 0px;
+	padding: 0px;
 }
