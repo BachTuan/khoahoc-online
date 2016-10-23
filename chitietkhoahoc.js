@@ -18,7 +18,7 @@ function thuchanh1() {
 	document.getElementById('noidungkhoahoc').innerHTML = '<h2>I.Quiz</h2><button onclick="showquiz()">Quiz</button><h2>II.LAB</h2><p>Hãy tạo 1 trang wed với 1 tiêu đề và 1 đoạn văn</p><p>Gợi ý: DÙng thẻ h1 và thẻ p </p>';
 }
 function rank() {
-	document.getElementById('noidungkhoahoc').innerHTML = '<table id="bangrank"> <tr> <td>HỌ TÊN</td> <td>THÀNH TÍCH</td> <td>HẠNG</td> </tr> <tr> <td>USER</td> <td>1234 Điểm</td> <td><img src="img/diamond.png"><p>Kim Cương</p></td> </tr> <tr> <td>USER</td> <td>1234 Điểm</td> <td><img src="img/diamond.png"><p>Kim Cương</p></td> </tr> <tr> <td>USER</td> <td>1234 Điểm</td> <td><img src="img/diamond.png"><p>Kim Cương</p></td> </tr> <tr> <td>USER</td> <td>1234 Điểm</td> <td><img src="img/diamond.png"><p>Kim Cương</p></td> </tr> <tr> <td>USER</td> <td>1234 Điểm</td> <td><img src="img/diamond.png"><p>Kim Cương</p></td> </tr> <tr> <td>USER</td> <td>1234 Điểm</td> <td><img src="img/diamond.png"><p>Kim Cương</p></td> </tr> </table>'
+	document.getElementById('noidungkhoahoc').innerHTML = '<table id="bangrank"> <tr> <td>HỌ TÊN</td> <td>THÀNH TÍCH</td> <td>HẠNG</td> </tr> <tr> <td>USER</td> <td>50000 Điểm</td> <td><img src="img/diamond.png"><p>Kim Cương</p></td> </tr> <tr> <td>USER</td> <td>5000 Điểm</td> <td><img src="img/platium.png"><p>Bạch Kim</p></td> </tr> <tr> <td>USER</td> <td>500 Điểm</td> <td><img src="img/gold.png"><p>Vàng</p></td> </tr> <tr> <td>USER</td> <td>50 Điểm</td> <td><img src="img/sliver.png"><p>Bạc</p></td> </tr> <tr> <td>USER</td> <td>5 Điểm</td> <td><img src="img/bronze.png"><p>Đồng</p></td> </tr> </table>'
 }
 function showquiz() {
 	$('#wrap').css('display','block');
