@@ -89,6 +89,10 @@ body {
 	border: none;
 	padding: 0px;
 	font-family: Serif;
+	border-bottom: 3px solid red;
+	box-sizing: border-box;
+	padding-left: 3px;
+	box-shadow: 0px 0px 5px #ccc;
 }
 #runcode {
 	width: 8%;
