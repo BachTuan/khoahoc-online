@@ -2,7 +2,9 @@
 	background: url(img/banner.png) no-repeat;
     background-size: cover;
     opacity: 0.3;
-    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
 }
 .wrap {
     max-width: 1280px;
@@ -13,7 +15,9 @@
     text-shadow:3px 3px 8px blue;
     position: relative;
     right: 100%;
-    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
 }
 #banner .title {
     font-size: 50px;
@@ -40,14 +44,16 @@
     color: #fff;
     background: #e56d04;
     padding: 20px 30px;
-    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
     text-shadow:
         -1px -1px 0 black,
         1px -1px 0 black,
         -1px 1px 0 black,
         1px 1px 0 black;
     cursor: pointer;
-    transition: background-color 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
 }
 .dangky .dangkyngay:hover { 
 	background: yellow;
@@ -59,12 +65,14 @@
     margin: 0px auto;
 }
 .body-home-son img {
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
     border: 1px solid #002b72;
     float: left;
     position: relative;
     z-index: 2;
-    transition: transform 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
     cursor: pointer;
 }
 .body-home-son {
@@ -73,19 +81,24 @@
     margin-top: 30px;
     float: left;
     position: relative;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 .body-home-son div {
     width: 75%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     height: 140px;
     border: 1px solid #002b72;
-    border-radius: 0px 100px 100px 0px;
-    box-shadow: 0px 0px 10px #002b72;
+    -webkit-border-radius: 0px 100px 100px 0px;
+    -moz-border-radius: 0px 100px 100px 0px;
+    -webkit-box-shadow: 0px 0px 10px #002b72;
+    -moz-box-shadow: 0px 0px 10px #002b72;
     position: absolute;
     top: 35px;
     left: 160px;
-    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
     font-size: 30px;
     font-weight: bold;
     cursor: pointer;
@@ -99,12 +112,16 @@
     line-height: 140px;
 }
 .body-home-son img:hover {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
 }
 .body-home-son div:hover {
     color: red;
     font-size: 35px;
-    box-shadow: 0px 0px 20px #002b72;
+    -webkit-box-shadow: 0px 0px 20px #002b72;
+    -moz-box-shadow: 0px 0px 20px #002b72;
 }
 #go-techmaster {
     width: 100%;
@@ -122,18 +139,24 @@
     height: 350px;
     margin: 2%;
     border: 1px solid #002b72;
-    box-shadow: 0px 0px 10px #002b72;
+    -webkit-box-shadow: 0px 0px 10px #002b72;
+    -moz-box-shadow: 0px 0px 10px #002b72;
     float: left;
-    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
     cursor: pointer;
     color: black;
     font-family: 'Lobster', cursive;
     overflow: hidden;
 }
 .help-you:hover {
-  box-shadow: 0px 0px 20px #002b72;
-  transform: scale(1.2);
-  color: red;
+    -webkit-box-shadow: 0px 0px 20px #002b72;
+    -moz-box-shadow: 0px 0px 20px #002b72;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    color: red;
 }
 .help-you h1 {
     color: #002b72;
@@ -146,13 +169,17 @@
     width: 100%;
     height: 250px;
     background: url(img/tuoitre.jpg) no-repeat;
-    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
 }
 #giangvien {
     width: 100%;
     height: 1150px;
     background-image: url("img/giangvien.jpg");
-    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
     text-align: center;
     color: #002b72;
     font-size: 25px;
@@ -169,8 +196,10 @@
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 25px;
-    box-shadow: 0px 0px 5px #ccc;
-    box-sizing: border-box;
+    -webkit-box-shadow: 0px 0px 5px #ccc;
+    -moz-box-shadow: 0px 0px 5px #ccc;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     background:rgba(255,255,255, 0.3);
 }
 .giangvien div {
@@ -194,12 +223,14 @@
 .hide-right {
     position: relative;
     left: 100%;
-    transition: all 0.75s ease;
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
 }
 .hide-left {
     position: relative;
     right: 100%;
-    transition: all 0.75s ease;
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
 }
 .hocvien {
     width: 0%;
@@ -208,9 +239,11 @@
     border: 1px solid #ccc;
     float: left;
     margin-bottom: 0px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     background:rgba(255,255,255, 0.2);
-    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
     overflow: hidden;
 }
 .hocvien img {
@@ -235,11 +268,14 @@
         height: 150px;
     }
     .body-home-son div {
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
         height: 95px;
         border: 1px solid #002b72;
-        border-radius: 0px 100px 100px 0px;
-        box-shadow: 0px 0px 10px #002b72;
+        -webkit-border-radius: 0px 100px 100px 0px;
+        -moz-border-radius: 0px 100px 100px 0px;
+        -webkit-box-shadow: 0px 0px 10px #002b72;
+        -moz-box-shadow: 0px 0px 10px #002b72;
         position: absolute;
         top: 30px;
         left: 90px;
@@ -252,7 +288,10 @@
         line-height: 95px;
     }
     .body-home-son img:hover {
-        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
     }
     .body-home-son div:hover {
         color: red;
@@ -264,7 +303,10 @@
         height: 250px;
     }
     .help-you:hover {
-        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
     }
     #go-techmaster {
         height: 750px;
@@ -283,11 +325,14 @@
         height: 100px;
     }
     .body-home-son div {
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
         height: 65px;
         border: 1px solid #002b72;
-        border-radius: 0px 100px 100px 0px;
-        box-shadow: 0px 0px 10px #002b72;
+        -webkit-border-radius: 0px 100px 100px 0px;
+        -moz-border-radius: 0px 100px 100px 0px;
+        -webkit-box-shadow: 0px 0px 10px #002b72;
+        -moz-box-shadow: 0px 0px 10px #002b72;
         position: absolute;
         top: 20px;
         left: 70px;
@@ -300,7 +345,10 @@
         line-height: 65px;
     }
     .body-home-son img:hover {
-        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
     }
     .body-home-son div:hover {
         color: red;
@@ -313,7 +361,10 @@
         height: 200px;
     }
     .help-you:hover {
-        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
     }
     #img-tuoitre {
         display: none;
@@ -335,11 +386,14 @@
         height: 100px;
     }
     .body-home-son div {
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
         height: 65px;
         border: 1px solid #002b72;
-        border-radius: 0px 100px 100px 0px;
-        box-shadow: 0px 0px 10px #002b72;
+        -webkit-border-radius: 0px 100px 100px 0px;
+        -moz-border-radius: 0px 100px 100px 0px;
+        -webkit-box-shadow: 0px 0px 10px #002b72;
+        -moz-box-shadow: 0px 0px 10px #002b72;
         position: absolute;
         top: 20px;
         left: 70px;
@@ -352,7 +406,10 @@
         line-height: 65px;
     }
     .body-home-son img:hover {
-        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
     }
     .body-home-son div:hover {
         color: red;
@@ -369,7 +426,10 @@
         font-size: 16px;
     }
     .help-you:hover {
-        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
     }
     #img-tuoitre {
         display: none;
@@ -394,11 +454,14 @@
         height: 100px;
     }
     .body-home-son div {
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
         height: 65px;
         border: 1px solid #002b72;
-        border-radius: 0px 100px 100px 0px;
-        box-shadow: 0px 0px 10px #002b72;
+        -webkit-border-radius: 0px 100px 100px 0px;
+        -moz-border-radius: 0px 100px 100px 0px;
+        -webkit-box-shadow: 0px 0px 10px #002b72;
+        -moz-box-shadow: 0px 0px 10px #002b72;
         position: absolute;
         top: 20px;
         left: 70px;
@@ -411,7 +474,10 @@
         line-height: 65px;
     }
     .body-home-son img:hover {
-        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
     }
     .body-home-son div:hover {
         color: red;
@@ -427,7 +493,10 @@
         font-size: 12px;
     }
     .help-you:hover {
-        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
     }
     #img-tuoitre {
         display: none;

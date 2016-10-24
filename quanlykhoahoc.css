@@ -1,5 +1,6 @@
 * {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 }
 body {
 	padding: 0px;
@@ -24,7 +25,8 @@ body {
 	font-size: 1.5vw;
 	color: #3e2723;
 	line-height: 45px;
-	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
 	font-weight: bold;
 	cursor: pointer;
 }
@@ -52,7 +54,8 @@ body {
 	border: 1px solid #ccc;
 	box-shadow: 5px 5px 10px black;
 	cursor: pointer;
-	transition: all 0.35s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
 	font-family: "Lobster";
 	font-size: 1vw;
 }
@@ -63,8 +66,12 @@ body {
 	padding-top: 75px;
 }
 .my-course:hover {
-	transform: translate(-3px,-3px);
-	box-shadow: 5px 5px 15px black;
+	-webkit-transform: translate(-3px,-3px);
+	-moz-transform: translate(-3px,-3px);
+	-o-transform: translate(-3px,-3px);
+	-ms-transform: translate(-3px,-3px);
+	-webkit-box-shadow: 5px 5px 15px black;
+	-moz-box-shadow: 5px 5px 15px black;
 }
 table {
 	width: 100%;
