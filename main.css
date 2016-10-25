@@ -48,7 +48,7 @@ header {
 	-webkit-transition: all 0.5s;
 }
 .login:hover {
-	background: #e65100;
+	background: #2979ff;
 	color: white;
 	font-weight: bold;
 }
@@ -62,7 +62,7 @@ header {
 #bignav {
 	width: 100%;
 	height: 40px;
-	background-color: #e65100;
+	background-color: #2979ff;
 }
 #toggle {
 	float: right;
@@ -71,12 +71,12 @@ header {
 	display: none;
 }
 #toggle:hover {
-	background: #dd2c00;
+	background: #0d47a1;
 }
 .nav {
 	max-width: 1000px;
 	min-width: 320px;
-	background-color: #e65100;
+	background-color: #2979ff;
 	max-height: 40px;
 	margin: auto;
 }
@@ -93,8 +93,7 @@ header {
 	-moz-transition: all 0.5s;
 }
 .menu:hover {
-	background-color: yellow;
-	color: black;
+	background-color: #0d47a1;
 	font-weight: bold;
 }
 footer {
@@ -122,13 +121,13 @@ footer {
 }
 #dangnhap, #dangky {
 	width: 400px;
-	height: 400px;
+	height: 350px;
 	border: 1px solid #ccc;
 	-webkit-box-shadow: 0px 0px 5px #ccc;
 	-moz-box-shadow: 0px 0px 5px #ccc;
 	text-align: center;
 	background-color:white;
-	color: #e65100;
+	color: #2979ff;
 	position: fixed;
 	top: 100px;
 	left: 35%;
@@ -143,7 +142,7 @@ footer {
 .nutbam {
 	width: 150px;
 	height: 30px;
-	color: #e65100;
+	color: #2979ff;
 	font-weight: bold;
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -158,12 +157,12 @@ footer {
     	width: 100%;
     	max-height: 0px;
     	overflow: hidden;
-    	background-color: #e65100;
+    	background-color: #2979ff;
     }
 	.menu {
 		width: 100%;
 		max-height: 0px;
-		background-color: #e65100;
+		background-color: #2979ff;
 		position: relative;
 		z-index: 1;
 	}
@@ -198,12 +197,12 @@ footer {
     	width: 100%;
     	max-height: 0px;
     	overflow: hidden;
-    	background-color: #e65100;
+    	background-color: #2979ff;
     }
 	.menu {
 		width: 100%;
 		max-height: 0px;
-		background-color: #e65100;
+		background-color: #2979ff;
 		position: relative;
 		z-index: 1;
 	}
@@ -269,12 +268,12 @@ footer {
     	width: 100%;
     	max-height: 0px;
     	overflow: hidden;
-    	background-color: #e65100;
+    	background-color: #2979ff;
     }
 	.menu {
 		width: 100%;
 		max-height: 0px;
-		background-color: #e65100;
+		background-color: #2979ff;
 		position: relative;
 		z-index: 6;
 	}

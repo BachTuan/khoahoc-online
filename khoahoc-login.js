@@ -42,13 +42,13 @@ $('#big-section').css("height",x*375 + "px");
 function tatcakhoahoc() {
 	$('#tatca').css("background-color","#d0d6e0");
 	$('#tatca').css("color","#824a02");
-	$('#coban').css("background-color","#e56d04");
+	$('#coban').css("background-color","#2979ff");
 	$('#coban').css("color","white");
-	$('#hethong').css("background-color","#e56d04");
+	$('#hethong').css("background-color","#2979ff");
 	$('#hethong').css("color","white");
-	$('#mobile').css("background-color","#e56d04");
+	$('#mobile').css("background-color","#2979ff");
 	$('#mobile').css("color","white");
-	$('#wed').css("background-color","#e56d04");
+	$('#wed').css("background-color","#2979ff");
 	$('#wed').css("color","white");
 	var a = "";
 	for (var i=0;i<=tatca.length - 1;i++) {
@@ -62,13 +62,13 @@ function tatcakhoahoc() {
 function basic() {
 	$('#coban').css("background-color","#d0d6e0");
 	$('#coban').css("color","#824a02");
-	$('#tatca').css("background-color","#e56d04");
+	$('#tatca').css("background-color","#2979ff");
 	$('#tatca').css("color","white");
-	$('#hethong').css("background-color","#e56d04");
+	$('#hethong').css("background-color","#2979ff");
 	$('#hethong').css("color","white");
-	$('#mobile').css("background-color","#e56d04");
+	$('#mobile').css("background-color","#2979ff");
 	$('#mobile').css("color","white");
-	$('#wed').css("background-color","#e56d04");
+	$('#wed').css("background-color","#2979ff");
 	$('#wed').css("color","white");
 	var a = "";
 	for (var i=0;i<=coban.length - 1;i++) {
@@ -82,13 +82,13 @@ function basic() {
 function system() {
 	$('#hethong').css("background-color","#d0d6e0");
 	$('#hethong').css("color","#824a02");
-	$('#tatca').css("background-color","#e56d04");
+	$('#tatca').css("background-color","#2979ff");
 	$('#tatca').css("color","white");
-	$('#coban').css("background-color","#e56d04");
+	$('#coban').css("background-color","#2979ff");
 	$('#coban').css("color","white");
-	$('#mobile').css("background-color","#e56d04");
+	$('#mobile').css("background-color","#2979ff");
 	$('#mobile').css("color","white");
-	$('#wed').css("background-color","#e56d04");
+	$('#wed').css("background-color","#2979ff");
 	$('#wed').css("color","white");
 	var a = "";
 	for (var i=0;i<=hethong.length - 1;i++) {
@@ -102,13 +102,13 @@ function system() {
 function site() {
 	$('#wed').css("background-color","#d0d6e0");
 	$('#wed').css("color","#824a02");
-	$('#tatca').css("background-color","#e56d04");
+	$('#tatca').css("background-color","#2979ff");
 	$('#tatca').css("color","white");
-	$('#hethong').css("background-color","#e56d04");
+	$('#hethong').css("background-color","#2979ff");
 	$('#hethong').css("color","white");
-	$('#mobile').css("background-color","#e56d04");
+	$('#mobile').css("background-color","#2979ff");
 	$('#mobile').css("color","white");
-	$('#coban').css("background-color","#e56d04");
+	$('#coban').css("background-color","#2979ff");
 	$('#coban').css("color","white");
 	var a = "";
 	for (var i=0;i<=wed.length - 1;i++) {
@@ -122,13 +122,13 @@ function site() {
 function didong() {
 	$('#mobile').css("background-color","#d0d6e0");
 	$('#mobile').css("color","#824a02");
-	$('#tatca').css("background-color","#e56d04");
+	$('#tatca').css("background-color","#2979ff");
 	$('#tatca').css("color","white");
-	$('#hethong').css("background-color","#e56d04");
+	$('#hethong').css("background-color","#2979ff");
 	$('#hethong').css("color","white");
-	$('#coban').css("background-color","#e56d04");
+	$('#coban').css("background-color","#2979ff");
 	$('#coban').css("color","white");
-	$('#wed').css("background-color","#e56d04");
+	$('#wed').css("background-color","#2979ff");
 	$('#wed').css("color","white");
 	var a = "";
 	for (var i=0;i<=mobile.length - 1;i++) {

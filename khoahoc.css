@@ -8,7 +8,7 @@
     max-width: 1280px;
     min-width: 320px;
     margin: 0px auto;
-    text-shadow: 0px 0px 5px #e56d04;
+    text-shadow: 0px 0px 5px #2979ff;
     text-align: center;
 }
 #banner .title {
@@ -28,10 +28,6 @@
     padding: 0;
     margin: 0px;
 }
-#user-name {
-	color: #f43900;
-	text-shadow: 1px 1px 5px white;
-}
 #big-section {
 	width: 100%;
 }
@@ -44,7 +40,7 @@ section {
 	width: 8.33%;
 	height: auto;
 	float: left;
-	background-color: #e56d04;
+	background-color: #2979ff;
 	color: white;
 }
 #menukhoahoc div {
@@ -115,22 +111,22 @@ section {
 	display: block;
 	width: 50%;
 	height: 30px;
-	background-color: orange;
+	background-color: #2962ff;
 	text-align: center;
 	line-height: 30px;
-	color: black;
+	color: white;
 	font-weight: bold;
 	text-transform: uppercase;
 	margin: auto;
 	position: relative;
 }
 .hocngay:hover {
-	background-color: #ffdd7f;
+	background-color: #0d47a1;
 }
 .click-hocngay {
 	width: 150%;
 	height: auto;
-	background: #ccd6b8;
+	background: #2196f3;
 	position: absolute;
 	display: none;
 	font-style: italic;
@@ -159,7 +155,7 @@ section {
 	height: 400px;
 }
 #thanhtoan-khoahoc table th {
-	background-color: #066600;
+	background-color: #1a237e;
 	color: white;
 	font-size: 20px;
 }
@@ -171,13 +167,13 @@ section {
 	font-size: 18px;
 }
 #thanhtoan-khoahoc #tenkhoahoc, #giatienkhoahoc {
-	color: red;
+	color: #1a237e;
 	font-weight: bold;
 }
 #thanhtoan-khoahoc table td button {
 	width: 80%;
 	height: 30px;
-	background-color: #066600;
+	background-color: #1a237e;
 	color: white;
 	font-size: 15px;
 }

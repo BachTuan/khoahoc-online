@@ -35,7 +35,7 @@ body {
 	padding: 0px;
 	margin: 0px;
 	color: white;
-	font-size: 1.5vw;
+	font-size: 18px;
 	font-family: Times;
 	cursor: pointer;
 	background-color: #002259;
@@ -46,7 +46,9 @@ body {
 }
 .click-son {
 	width: 33.33%;
+	height: 30px;
 	text-align: center;
+	line-height: 30px;
 	float: left;
 	-webkit-transition: all 0.35s;
 	-moz-transition: all 0.35s;
@@ -93,12 +95,11 @@ body {
 	background: white;
 	overflow-x:hidden;
 	border: none;
-	padding: 0px;
+	padding: 10px;
 	font-family: Serif;
 	border-bottom: 3px solid red;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	padding-left: 3px;
 	-webkit-box-shadow: 0px 0px 5px #ccc;
 	-moz-box-shadow: 0px 0px 5px #ccc;
 }
@@ -161,6 +162,7 @@ body {
 #bangrank {
 	width: 96%;
 	margin: auto;
+	border: 1px solid #ccc;
 }
 #bangrank td {
 	width: 33.33%;
