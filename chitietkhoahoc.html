@@ -12,6 +12,13 @@
 	<script type="text/javascript" src="mode/htmlmixed/htmlmixed.js"></script>
 	<script type="text/javascript" src="mode/css/css.js"></script>
 	<script type="text/javascript" src="mode/vbscript/vbscript.js"></script>
+	<script type="text/javascript" src="mode/swift/swift.js"></script>
+	<script src="addon/hint/show-hint.js"></script>
+	<script src="addon/hint/css-hint.js"></script>
+	<script src="addon/hint/html-hint.js"></script>
+	<script src="addon/hint/anyword-hint.js"></script>
+	<script src="addon/hint/javascript-hint.js"></script>
+	<link rel="stylesheet" href="addon/hint/show-hint.css">
 	<link rel="stylesheet" type="text/css" href="chitietkhoahoc.css">
 	<title>Chi Tiết Khóa Học</title>
 </head>
@@ -104,12 +111,17 @@
 		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
 		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
 	</div>
-<span onclick="inketqua()" id="runcode">RUN CODE</span>
+<span onclick="inketqua()" class="click-change" id="runcode">RUN CODE</span>
+<span onclick="html()" class="click-change" id="highlight-html">HTML</span>
+<span onclick="css()" class="click-change" id="highlight-css">CSS</span>
+<span onclick="javascript()" class="click-change" id="highlight-js">JS</span>
+<span onclick="swift()" class="click-change" id="highlight-swift">SWIFT</span>
     <div id="result"></div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="chitietkhoahoc.js"></script>
 	<div id="codeeditor"></div>
 	<script>
+		$('#highlight-html').css('background-color','#006064');
 		var mixedMode = {
 	        name: "htmlmixed",
 	        scriptTypes: [{matches: /\/x-handlebars-template|\/x-mustache/i,
@@ -120,8 +132,57 @@
 		var editor = CodeMirror(document.getElementById("codeeditor"), {
 			mode : mixedMode,
 			theme : "monokai",
-			tabSize: 5
+			tabSize: 5,
+			extraKeys: {"Ctrl": "autocomplete"}
 		});
+		function html() {
+			editor =  CodeMirror(document.getElementById("codeeditor"), {
+			mode : mixedMode,
+			theme : "monokai",
+			tabSize: 5,
+			extraKeys: {"Ctrl": "autocomplete"}
+			});
+			$('#highlight-html').css('background-color','#006064');
+			$('#highlight-css').css('background-color','#004d40');
+			$('#highlight-js').css('background-color','#004d40');
+			$('#highlight-swift').css('background-color','#004d40');
+		}
+		function css() {
+			editor =  CodeMirror(document.getElementById("codeeditor"), {
+			mode : "css",
+			theme : "monokai",
+			tabSize: 5,
+			extraKeys: {"Ctrl": "autocomplete"}
+			});
+			$('#highlight-html').css('background-color','#004d40');
+			$('#highlight-css').css('background-color','#006064');
+			$('#highlight-js').css('background-color','#004d40');
+			$('#highlight-swift').css('background-color','#004d40');
+		}
+		function swift() {
+			editor =  CodeMirror(document.getElementById("codeeditor"), {
+			mode : "swift",
+			theme : "monokai",
+			tabSize: 5,
+			extraKeys: {"Ctrl": "autocomplete"}
+			});
+			$('#highlight-html').css('background-color','#004d40');
+			$('#highlight-css').css('background-color','#004d40');
+			$('#highlight-js').css('background-color','#004d40');
+			$('#highlight-swift').css('background-color','#006064');
+		}
+		function javascript() {
+			editor =  CodeMirror(document.getElementById("codeeditor"), {
+			mode : "javascript",
+			theme : "monokai",
+			tabSize: 5,
+			extraKeys: {"Ctrl": "autocomplete"}
+			});
+			$('#highlight-html').css('background-color','#004d40');
+			$('#highlight-css').css('background-color','#004d40');
+			$('#highlight-js').css('background-color','#006064');
+			$('#highlight-swift').css('background-color','#004d40');
+		}
 	</script>
 	<div id="wrap">
 		<input type="button" id="clickquiz" value="Start" onclick="chuyencau()">

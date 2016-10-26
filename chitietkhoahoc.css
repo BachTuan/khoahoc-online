@@ -77,7 +77,7 @@ body {
 	text-align: left;
 	padding-left: 10px;
 	padding-right: 10px;
-	border-bottom: 1px solid #12345a;
+	border-bottom: 1px solid #ccc;
 	color: black;
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
@@ -97,26 +97,50 @@ body {
 	border: none;
 	padding: 10px;
 	font-family: Serif;
-	border-bottom: 3px solid red;
+	border-bottom: 3px solid #004d40;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-shadow: 0px 0px 5px #ccc;
 	-moz-box-shadow: 0px 0px 5px #ccc;
 }
 #runcode {
+	position: fixed;
+	bottom: 50%;
+	right: 0.5%;
+}
+#highlight-css {
+	position: fixed;
+	bottom: 50%;
+	right: 8.5%;
+}
+#highlight-js {
+	position: fixed;
+	bottom: 50%;
+	right: 16.5%;
+}
+#highlight-swift {
+	position: fixed;
+	bottom: 50%;
+	right: 24.5%;
+}
+#highlight-html {
+	position: fixed;
+	bottom: 50%;
+	right: 32.5%;
+}
+.click-change {
 	width: 8%;
 	height: 25px;
-	background-color: red;
-	position: fixed;
-	top: 50%;
-	right: 0.5%;
-	z-index: 5;
+	background-color: #004d40;
 	color: white;
 	text-align: center;
 	line-height: 25px;
 	font-size: 15px;
 	cursor: pointer;
 	font-family: Times;
+	z-index: 5;
+	box-sizing: border-box;
+	border-right: 1px solid #ccc;
 }
 #wrap {
 	width: 46%;

@@ -42,7 +42,7 @@
     font-size: 28px;
     text-transform: uppercase;
     color: #fff;
-    background: #2979ff;
+    background: #26a69a;
     padding: 20px 30px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -155,7 +155,7 @@
     -moz-transform: scale(1.2);
     -o-transform: scale(1.2);
     -ms-transform: scale(1.2);
-    color: red;
+    color: #002b72;
 }
 .help-you h1 {
     color: #002b72;
