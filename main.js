@@ -4,12 +4,12 @@ function banner() {
 	$('#banner').css("opacity","1");
 	$('.wrap').css("right","0");
 };
-function showgiangvien() {
-	$('.hide-left').css("right","0");
-	$('.hide-right').css("left","0");
+function animategiangvien() {
+	$('.giangvien').css('animation','giangvienanimate 1s ease');
+	$('.giangvien').css('-webkit-animation','giangvienanimate 1s ease');
 };
 function showhocvien() {
-	$('.hocvien').css("width","21%");
+	$('.hocvien').css("width","29.333%");
 };
 function dangnhaphide() {
 	$('#dangnhap').css("display","none");

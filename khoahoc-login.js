@@ -39,6 +39,8 @@ for (var i=0;i<=tatca.length - 1;i++) {
 var x = parseInt(tatca.length/4) + 1;
 $("#danhsachkhoahoc").html(a);
 $('#big-section').css("height",x*375 + "px");
+$('.hocngay').css('-webkit-animation','muakhoahoc 3s ease infinite');
+$('.hocngay').css('-moz-animation','muakhoahoc 3s ease infinite');
 function tatcakhoahoc() {
 	$('#tatca').css("background-color","#d0d6e0");
 	$('#tatca').css("color","#824a02");

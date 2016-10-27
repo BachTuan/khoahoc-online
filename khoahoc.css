@@ -1,3 +1,10 @@
+@keyframes muakhoahoc {
+    0%  {background-color: #EF7126; color: #F9E559;}
+    25%  {background-color: #6F3662; color: #FFFFFF;}
+    50%  {background-color: #9F6164; color: #F8DEBD;}
+    75%  {background-color: #44B3C2; color: #FFFFFF;}
+    100% {background-color: #218C8D; color: #F9E559;}
+}
 #banner {
 	background: url(img/bannerkhoahoc.jpg) no-repeat;
     -webkit-background-size: cover;
@@ -186,7 +193,7 @@ section {
 	color: #004d40;
 }
 .font-size-p {
-	font-size: 18px;
+	font-size: 20px;
 }
 #thongtinchitietkhoahoc-son button{
 	width: 30%;

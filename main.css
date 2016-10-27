@@ -111,6 +111,7 @@ footer {
 	bottom: 5px;
 	right: 10px;
 	cursor: pointer;
+	border-radius: 50%
 }
 #address, #contact, #information {
 	color: white;
