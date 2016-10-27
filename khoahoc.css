@@ -67,20 +67,6 @@ section {
 	margin: 1%;
 	cursor: pointer;
 }
-.box-absolute {
-	width: 200px;
-	height: 80px;
-	line-height: 80px;
-	font-weight: bold;
-	display: none;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	background: #26a69a;
-	z-index: 3;
-	color: white;
-	border-radius: 10px;
-}
 #danhsachkhoahoc .box-relative .img-course:hover .box-absolute{
 	display: block;
 }
@@ -189,11 +175,16 @@ section {
 	margin: 0px;
 	margin-bottom: 10px;
 	color: #1a237e;
+	display: inline-block;
 }
-#thongtinchitietkhoahoc-son p {
+.para1, .para2, .para3, .para4, .para5{
 	margin: 0px;
 	margin-bottom: 2px;
 	padding-left: 30px;
+	font-size: 0px;
+	color: #004d40;
+}
+.font-size-p {
 	font-size: 18px;
 }
 #thongtinchitietkhoahoc-son button{
@@ -212,6 +203,19 @@ section {
 #thongtinchitietkhoahoc-son button:hover {
 	background: #004d40;
 	box-shadow: 5px 5px 15px black;
+}
+#down-up1, #down-up2, #down-up3, #down-up4, #down-up5 {
+	position: relative;
+	top: 10px;
+	left: 10px;
+	cursor: pointer;
+	transition: all 0.35s ease;
+}
+.rotate {
+	-webkit-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
 }
 @media only screen and (max-width: 1280px) {
 	#menukhoahoc div {
