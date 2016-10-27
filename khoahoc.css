@@ -159,6 +159,7 @@ section {
 	top: 0;
 	background: rgba(0,0,0,0.75);
 	display: none;
+	z-index: 2;
 }
 #thongtinchitietkhoahoc-son {
 	width: 80%;

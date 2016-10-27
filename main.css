@@ -166,6 +166,8 @@ footer {
 		background-color: #26a69a;
 		position: relative;
 		z-index: 1;
+	    -webkit-transition: all 0.25s;
+	    -moz-transition: all 0.25s;
 	}
 	 #banner .title {
     	text-align: center;
@@ -206,6 +208,8 @@ footer {
 		background-color: #26a69a;
 		position: relative;
 		z-index: 1;
+		-webkit-transition: all 0.25s;
+	    -moz-transition: all 0.25s;
 	}
 	#banner .title {
     	text-align: center;
@@ -277,6 +281,8 @@ footer {
 		background-color: #26a69a;
 		position: relative;
 		z-index: 6;
+		-webkit-transition: all 0.25s;
+	    -moz-transition: all 0.25s;
 	}
 	#banner {
         display: none;
