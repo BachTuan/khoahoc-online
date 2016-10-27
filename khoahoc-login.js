@@ -1,33 +1,33 @@
 var coban = [
-	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/coban/coban1.jpg"></div><h2>Khóa Học ASP.NET</h2><span class="hocngay" onclick="thanhtoan()">FREE <div class=click-hocngay>Bấm để thêm khóa học vào quản lý khóa học</div></span></div>',
-	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/coban/coban2.jpg"></div><h2>Front-End cơ bản</h2><span class="hocngay" onclick="thanhtoan()">500.000đ <div class=click-hocngay>Bấm để thêm khóa học vào quản lý khóa học</div></span></div>',
-	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/coban/coban3.jpg"></div><h2>MAGETO 2</h2><span class="hocngay" onclick="thanhtoan()">1.200.000đ <div class=click-hocngay>Bấm để thêm khóa học vào quản lý khóa học</div></span></div>',
-	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/coban/coban4.jpg"></div><h2>Back-End NodeJS</h2><span class="hocngay" onclick="thanhtoan()">FREE <div class=click-hocngay>Bấm để thêm khóa học vào quản lý khóa học</div></span></div>',
-	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/coban/coban5.jpg"></div><h2>Java Cơ Bản</h2><span class="hocngay" onclick="thanhtoan()">3.000.000đ <div class=click-hocngay>Bấm để thêm khóa học vào quản lý khóa học</div></span></div>',
-	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/coban/coban6.jpg"></div><h2>Java Cơ Bản</h2><span class="hocngay" onclick="thanhtoan()">300.000đ <div class=click-hocngay>Bấm để thêm khóa học vào quản lý khóa học</div></span></div>'
+	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/coban/coban1.jpg"></div><h2>Khóa Học ASP.NET</h2><span class="hocngay" onclick="thanhtoan()">Mua Ngay: FREE</span></div>',
+	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/coban/coban2.jpg"></div><h2>Front-End cơ bản</h2><span class="hocngay" onclick="thanhtoan()">Mua Ngay: 500.000đ</span></div>',
+	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/coban/coban3.jpg"></div><h2>MAGETO 2</h2><span class="hocngay" onclick="thanhtoan()">Mua Ngay: 1.200.000đ</span></div>',
+	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/coban/coban4.jpg"></div><h2>Back-End NodeJS</h2><span class="hocngay" onclick="thanhtoan()">Mua Ngay: FREE</span></div>',
+	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/coban/coban5.jpg"></div><h2>Java Cơ Bản</h2><span class="hocngay" onclick="thanhtoan()">Mua Ngay: 3.000.000đ</span></div>',
+	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/coban/coban6.jpg"></div><h2>Java Cơ Bản</h2><span class="hocngay" onclick="thanhtoan()">Mua Ngay: 300.000đ</span></div>'
 ];
 var hethong = [
-	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/hethong/hethong1.jpg"></div><h2>Khóa Học ASP.NET</h2><span class="hocngay" onclick="thanhtoan()">50.000đ <div class=click-hocngay>Bấm để thêm khóa học vào quản lý khóa học</div></span></div>',
-	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/hethong/hethong2.jpg"></div><h2>Front-End cơ bản</h2><span class="hocngay" onclick="thanhtoan()">FREE <div class=click-hocngay>Bấm để thêm khóa học vào quản lý khóa học</div></span></div>',
-	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/hethong/hethong3.jpg"></div><h2>MAGETO 2</h2><span class="hocngay" onclick="thanhtoan()">600.000đ <div class=click-hocngay>Bấm để thêm khóa học vào quản lý khóa học</div></span></div>',
-	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/hethong/hethong4.jpg"></div><h2>Back-End NodeJS</h2><span class="hocngay" onclick="thanhtoan()">FREE <div class=click-hocngay>Bấm để thêm khóa học vào quản lý khóa học</div></span></div>'
+	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/hethong/hethong1.jpg"></div><h2>Khóa Học ASP.NET</h2><span class="hocngay" onclick="thanhtoan()">Mua Ngay: 50.000đ</span></div>',
+	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/hethong/hethong2.jpg"></div><h2>Front-End cơ bản</h2><span class="hocngay" onclick="thanhtoan()">Mua Ngay: FREE</span></div>',
+	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/hethong/hethong3.jpg"></div><h2>MAGETO 2</h2><span class="hocngay" onclick="thanhtoan()">Mua Ngay: 600.000đ</span></div>',
+	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/hethong/hethong4.jpg"></div><h2>Back-End NodeJS</h2><span class="hocngay" onclick="thanhtoan()">Mua Ngay: FREE</span></div>'
 ];
 var mobile = [
-	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/mobile/mobile1.jpg"></div><h2>Khóa Học ASP.NET</h2><span class="hocngay" onclick="thanhtoan()">FREE <div class=click-hocngay>Bấm để thêm khóa học vào quản lý khóa học</div></span></div>',
-	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/mobile/mobile2.jpg"></div><h2>Front-End cơ bản</h2><span class="hocngay" onclick="thanhtoan()">800.000đ <div class=click-hocngay>Bấm để thêm khóa học vào quản lý khóa học</div></span></div>',
-	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/mobile/mobile3.jpg"></div><h2>MAGETO 2</h2><span class="hocngay" onclick="thanhtoan()">FREE <div class=click-hocngay>Bấm để thêm khóa học vào quản lý khóa học</div></span></div>',
-	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/mobile/mobile4.jpg"></div><h2>Back-End NodeJS</h2><span class="hocngay" onclick="thanhtoan()">2.500.000đ <div class=click-hocngay>Bấm để thêm khóa học vào quản lý khóa học</div></span></div>'
+	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/mobile/mobile1.jpg"></div><h2>Khóa Học ASP.NET</h2><span class="hocngay" onclick="thanhtoan()">Mua Ngay: FREE</span></div>',
+	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/mobile/mobile2.jpg"></div><h2>Front-End cơ bản</h2><span class="hocngay" onclick="thanhtoan()">Mua Ngay: 800.000đ</span></div>',
+	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/mobile/mobile3.jpg"></div><h2>MAGETO 2</h2><span class="hocngay" onclick="thanhtoan()">Mua Ngay: FREE</span></div>',
+	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/mobile/mobile4.jpg"></div><h2>Back-End NodeJS</h2><span class="hocngay" onclick="thanhtoan()">Mua Ngay: 2.500.000đ</span></div>'
 ];
 var wed = [
-	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/wed/wed1.jpg"></div><h2>Khóa Học ASP.NET</h2><span class="hocngay" onclick="thanhtoan()">15.000.000đ <div class=click-hocngay>Bấm để thêm khóa học vào quản lý khóa học</div></span></div>',
-	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/wed/wed2.jpg"></div><h2>Front-End cơ bản</h2><span class="hocngay" onclick="thanhtoan()">FREE <div class=click-hocngay>Bấm để thêm khóa học vào quản lý khóa học</div></span></div>',
-	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/wed/wed3.jpg"></div><h2>MAGETO 2</h2><span class="hocngay" onclick="thanhtoan()">100.000đ <div class=click-hocngay>Bấm để thêm khóa học vào quản lý khóa học</div></span></div>',
-	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/wed/wed4.jpg"></div><h2>Back-End NodeJS</h2><span class="hocngay" onclick="thanhtoan()">1.000.000đ <div class=click-hocngay>Bấm để thêm khóa học vào quản lý khóa học</div></span></div>',
-	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/wed/wed5.jpg"></div><h2>Back-End NodeJS</h2><span class="hocngay" onclick="thanhtoan()">1.200.000đ <div class=click-hocngay>Bấm để thêm khóa học vào quản lý khóa học</div></span></div>',
-	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/wed/wed6.jpg"></div><h2>Back-End NodeJS</h2><span class="hocngay" onclick="thanhtoan()">1.400.000đ <div class=click-hocngay>Bấm để thêm khóa học vào quản lý khóa học</div></span></div>',
-	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/wed/wed7.jpg"></div><h2>Back-End NodeJS</h2><span class="hocngay" onclick="thanhtoan()">1.800.000đ <div class=click-hocngay>Bấm để thêm khóa học vào quản lý khóa học</div></span></div>',
-	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/wed/wed8.jpg"></div><h2>Back-End NodeJS</h2><span class="hocngay" onclick="thanhtoan()">100.000đ <div class=click-hocngay>Bấm để thêm khóa học vào quản lý khóa học</div></span></div>',
-	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/wed/wed9.jpg"></div><h2>Back-End NodeJS</h2><span class="hocngay" onclick="thanhtoan()">1.100.000đ <div class=click-hocngay>Bấm để thêm khóa học vào quản lý khóa học</div></span></div>'
+	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/wed/wed1.jpg"></div><h2>Khóa Học ASP.NET</h2><span class="hocngay" onclick="thanhtoan()">Mua Ngay: 15.000.000đ</span></div>',
+	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/wed/wed2.jpg"></div><h2>Front-End cơ bản</h2><span class="hocngay" onclick="thanhtoan()">Mua Ngay: FREE</span></div>',
+	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/wed/wed3.jpg"></div><h2>MAGETO 2</h2><span class="hocngay" onclick="thanhtoan()">Mua Ngay: 100.000đ</span></div>',
+	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/wed/wed4.jpg"></div><h2>Back-End NodeJS</h2><span class="hocngay" onclick="thanhtoan()">Mua Ngay: 1.000.000đ</span></div>',
+	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/wed/wed5.jpg"></div><h2>Back-End NodeJS</h2><span class="hocngay" onclick="thanhtoan()">Mua Ngay: 1.200.000đ</span></div>',
+	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/wed/wed6.jpg"></div><h2>Back-End NodeJS</h2><span class="hocngay" onclick="thanhtoan()">Mua Ngay: 1.400.000đ</span></div>',
+	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/wed/wed7.jpg"></div><h2>Back-End NodeJS</h2><span class="hocngay" onclick="thanhtoan()">Mua Ngay: 1.800.000đ</span></div>',
+	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/wed/wed8.jpg"></div><h2>Back-End NodeJS</h2><span class="hocngay" onclick="thanhtoan()">Mua Ngay: 100.000đ</span></div>',
+	'<div class="box-relative"><div class="img-course" onclick="chitietkhoahocshow()"><img src="img/khoahoc/wed/wed9.jpg"></div><h2>Back-End NodeJS</h2><span class="hocngay" onclick="thanhtoan()">Mua Ngay: 1.100.000đ</span></div>'
 ];
 var tatca = mobile.concat(wed.concat(coban.concat(hethong)));
 var a = "";
@@ -39,8 +39,8 @@ for (var i=0;i<=tatca.length - 1;i++) {
 var x = parseInt(tatca.length/4) + 1;
 $("#danhsachkhoahoc").html(a);
 $('#big-section').css("height",x*375 + "px");
-$('.hocngay').css('-webkit-animation','muakhoahoc 3s ease infinite');
-$('.hocngay').css('-moz-animation','muakhoahoc 3s ease infinite');
+$('.hocngay').css('width','75%');
+
 function tatcakhoahoc() {
 	$('#tatca').css("background-color","#d0d6e0");
 	$('#tatca').css("color","#824a02");

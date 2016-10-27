@@ -13,6 +13,8 @@
 	<script type="text/javascript" src="mode/css/css.js"></script>
 	<script type="text/javascript" src="mode/vbscript/vbscript.js"></script>
 	<script type="text/javascript" src="mode/swift/swift.js"></script>
+	<script type="text/javascript" src="mode/php/php.js"></script>
+	<script type="text/javascript" src="mode/clike/clike.js"></script>
 	<script src="addon/hint/show-hint.js"></script>
 	<script src="addon/hint/css-hint.js"></script>
 	<script src="addon/hint/html-hint.js"></script>
@@ -23,6 +25,18 @@
 	<title>Chi Tiết Khóa Học</title>
 </head>
 <body>
+	<div id="wrap">
+		<div id="cauhoi">Nhấn bắt đầu để làm bài quiz</div>
+		<div id="dapanA" class="dapan" onclick='traloi(document.getElementById("cauhoi").innerHTML, this.innerHTML)'></div>
+		<div id="dapanB" class="dapan" onclick='traloi(document.getElementById("cauhoi").innerHTML, this.innerHTML)'></div>
+		<div id="dapanC" class="dapan" onclick='traloi(document.getElementById("cauhoi").innerHTML, this.innerHTML)'></div>
+		<div id="dapanD" class="dapan" onclick='traloi(document.getElementById("cauhoi").innerHTML, this.innerHTML)'></div>
+		<div id="total">
+			<div id="start" onclick="chuyencau()">Bắt Đầu</div>
+			<div id="ketthuc" onclick="hidequiz()">Kết Thúc</div>
+			<div id="ketqua-quiz">Kết quả</div>
+		</div>
+	</div>
 <div id="noidungkhoahoc">
 <h1>BÀI 1: GIỚI THIỆU VỀ HTML</h1>
 <p>Ngôn ngữ đánh dấu siêu văn bản (html) chỉ rõ một trang Web sẽ được hiển thị như thế nào trong một trình duyệt. Sử dụng các thẻ và các phần tử html, bạn có thể:</p>
@@ -39,7 +53,7 @@
 	<div class="click">
 		<span onclick="show()" class="click-son">Lý Thuyết</span>
 		<span onclick="thuchanh()" class="click-son">Thực Hành</span>
-		<span onclick="rank()" class="click-son">Ranking</span>
+		<span onclick="rank()" class="click-son">Xếp Hạng</span>
 	</div>
 	<div id="lythuyet" class="demuc">
 		<div class="lesson" onclick="bai1(),show()">Bài 1: Giới Thiệu Về HTML</div>
@@ -111,11 +125,14 @@
 		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
 		<div class="lesson">Bài Thực Hành 3: Tạo trang album ảnh</div>
 	</div>
-<span onclick="inketqua()" class="click-change" id="runcode">RUN CODE</span>
-<span onclick="html()" class="click-change" id="highlight-html">HTML</span>
-<span onclick="css()" class="click-change" id="highlight-css">CSS</span>
-<span onclick="javascript()" class="click-change" id="highlight-js">JS</span>
-<span onclick="swift()" class="click-change" id="highlight-swift">SWIFT</span>
+<span onclick="inketqua()" id="runcode">RUN CODE</span>
+<select id="select-code" onchange="myFunction()">
+	<option>HTML</option>
+	<option>CSS</option>
+	<option>JAVASCRIPT</option>
+	<option>SWIFT</option>
+	<option>PHP</option>
+</select>
     <div id="result"></div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="chitietkhoahoc.js"></script>
@@ -133,134 +150,63 @@
 			mode : mixedMode,
 			theme : "monokai",
 			tabSize: 5,
+			lineNumbers: true,
+			firstLineNumber: 1,
 			extraKeys: {"Ctrl": "autocomplete"}
 		});
-		function html() {
-			editor =  CodeMirror(document.getElementById("codeeditor"), {
-			mode : mixedMode,
-			theme : "monokai",
-			tabSize: 5,
-			extraKeys: {"Ctrl": "autocomplete"}
-			});
-			$('#highlight-html').css('background-color','#006064');
-			$('#highlight-css').css('background-color','#004d40');
-			$('#highlight-js').css('background-color','#004d40');
-			$('#highlight-swift').css('background-color','#004d40');
-		}
-		function css() {
-			editor =  CodeMirror(document.getElementById("codeeditor"), {
-			mode : "css",
-			theme : "monokai",
-			tabSize: 5,
-			extraKeys: {"Ctrl": "autocomplete"}
-			});
-			$('#highlight-html').css('background-color','#004d40');
-			$('#highlight-css').css('background-color','#006064');
-			$('#highlight-js').css('background-color','#004d40');
-			$('#highlight-swift').css('background-color','#004d40');
-		}
-		function swift() {
-			editor =  CodeMirror(document.getElementById("codeeditor"), {
-			mode : "swift",
-			theme : "monokai",
-			tabSize: 5,
-			extraKeys: {"Ctrl": "autocomplete"}
-			});
-			$('#highlight-html').css('background-color','#004d40');
-			$('#highlight-css').css('background-color','#004d40');
-			$('#highlight-js').css('background-color','#004d40');
-			$('#highlight-swift').css('background-color','#006064');
-		}
-		function javascript() {
-			editor =  CodeMirror(document.getElementById("codeeditor"), {
-			mode : "javascript",
-			theme : "monokai",
-			tabSize: 5,
-			extraKeys: {"Ctrl": "autocomplete"}
-			});
-			$('#highlight-html').css('background-color','#004d40');
-			$('#highlight-css').css('background-color','#004d40');
-			$('#highlight-js').css('background-color','#006064');
-			$('#highlight-swift').css('background-color','#004d40');
+		function myFunction() {
+			var x = $('#select-code').val();
+			if (x=="HTML") {
+				editor =  CodeMirror(document.getElementById("codeeditor"), {
+				mode : mixedMode,
+				theme : "monokai",
+				tabSize: 5,
+				lineNumbers: true,
+				firstLineNumber: 1,
+				extraKeys: {"Ctrl": "autocomplete"}
+				});
+			}
+			if (x=="CSS") {
+				editor =  CodeMirror(document.getElementById("codeeditor"), {
+				mode : "css",
+				theme : "monokai",
+				tabSize: 5,
+				lineNumbers: true,
+				firstLineNumber: 1,
+				extraKeys: {"Ctrl": "autocomplete"}
+				});
+			}
+			if (x=="JAVASCRIPT") {
+				editor =  CodeMirror(document.getElementById("codeeditor"), {
+				mode : "javascript",
+				theme : "monokai",
+				tabSize: 5,
+				lineNumbers: true,
+				firstLineNumber: 1,
+				extraKeys: {"Ctrl": "autocomplete"}
+				});
+			}
+			if (x=="SWIFT") {
+				editor =  CodeMirror(document.getElementById("codeeditor"), {
+				mode : "swift",
+				theme : "monokai",
+				tabSize: 5,
+				lineNumbers: true,
+				firstLineNumber: 1,
+				extraKeys: {"Ctrl": "autocomplete"}
+				});
+			}
+			if (x=="PHP") {
+				editor =  CodeMirror(document.getElementById("codeeditor"), {
+				mode : "application/x-httpd-php",
+				theme : "monokai",
+				tabSize: 5,
+				lineNumbers: true,
+				firstLineNumber: 1,
+				extraKeys: {"Ctrl": "autocomplete"}
+				});
+			}
 		}
 	</script>
-	<div id="wrap">
-		<input type="button" id="clickquiz" value="Start" onclick="chuyencau()">
-		<input type="button" id="clickquiz" value="x" onclick="hidequiz()" style="float: right;">
-		<div id="cauhoi">Ấn start để bắt đầu bài quiz</div>
-		<input type="button" id="dapanA" class="dapan" value="" onclick='traloi(document.getElementById("cauhoi").innerHTML, this.value)'/>
-		<input type="button" id="dapanB" class="dapan" value="" onclick='traloi(document.getElementById("cauhoi").innerHTML, this.value)'/>
-		<input type="button" id="dapanC" class="dapan" value="" onclick='traloi(document.getElementById("cauhoi").innerHTML, this.value)'/>
-		<input type="button" id="dapanD" class="dapan" value="" onclick='traloi(document.getElementById("cauhoi").innerHTML, this.value)'/>
-		<div id="result-quiz"></div>
-	</div>
-	<script type="text/javascript">
-	var cau1 = {
-		cauhoi:"Chọn định nghĩa SAI về HTML", dapanA:"Ngôn ngữ hiển thị mặc định của HTML không phải là tiếng Việt", dapanB:"HTML là ngôn ngữ trình bày trang web", dapanC:"Tài liệu HTML được tạo nên từ các thẻ", dapanD:"Phiên bản HTML mới nhất là HTML 5",
-	};
-	var cau2 = {
-		cauhoi:"Theo tiêu chuẩn mới nhất của HTML5 thi khai báo doctype chuẩn là", dapanA:"!DOCTYPE html", dapanB:"!DOCTYPE html5", dapanC:"!DOCTYPE htmlnew", dapanD:"!DOCTYPE",
-	};
-	var cau3 = {
-		cauhoi:"Thẻ nào dùng để định nghĩa danh sách có thứ tự?", dapanA:"ul", dapanB:"al", dapanC:"ol", dapanD:"el",
-	};
-	var cau4 = {
-		cauhoi:"Đoạn HTML sau đây thêm màu nền cho trang là màu gì? <br> body {color:red;background-color:yellow;}", dapanA:"Đỏ", dapanB:"Đỏ và Vàng", dapanC:"Không màu", dapanD:"Vàng",
-	};
-	var mang = [cau1, cau2, cau3, cau4];
-	var a = 0;
-	function chuyencau() {
-		if (a <= mang.length - 1) {
-			document.getElementById("cauhoi").innerHTML = mang[a].cauhoi;
-			document.getElementById("dapanA").value = mang[a].dapanA;
-			document.getElementById("dapanB").value = mang[a].dapanB;
-			document.getElementById("dapanC").value = mang[a].dapanC;
-			document.getElementById("dapanD").value = mang[a].dapanD;
-			document.getElementById("clickquiz").value = "Tiếp Tục";
-			document.getElementById('result-quiz').innerHTML = "";
-		}
-		else {
-			document.getElementById('cauhoi').innerHTML = "Bạn đã kết thúc bài quiz! Ấn start để bắt đầu lại";
-			a = -1;
-			document.getElementById("clickquiz").value = "Start";
-			document.getElementById('result-quiz').innerHTML = "";
-		}
-		a=a+1;
-	}
-	function traloi(aa,b) {
-		if (aa==cau1.cauhoi) {
-			if (b==cau1.dapanA) {
-				document.getElementById('result-quiz').innerHTML = "CHÍNH XÁC";
-			}
-			else {
-				document.getElementById('result-quiz').innerHTML = "SAI :((";
-			}
-		}
-		if (aa==cau2.cauhoi) {
-			if (b==cau2.dapanB) {
-				document.getElementById('result-quiz').innerHTML = "CHÍNH XÁC";
-			}
-			else {
-				document.getElementById('result-quiz').innerHTML = "SAI :((";
-			}
-		}
-		if (aa==cau3.cauhoi) {
-			if (b==cau3.dapanC) {
-				document.getElementById('result-quiz').innerHTML = "CHÍNH XÁC";
-			}
-			else {
-				document.getElementById('result-quiz').innerHTML = "SAI :((";
-			}
-		}
-		if (aa==cau4.cauhoi) {
-			if (b==cau4.dapanD) {
-				document.getElementById('result-quiz').innerHTML = "CHÍNH XÁC";
-			}
-			else {
-				document.getElementById('result-quiz').innerHTML = "SAI :((";
-			}
-		}
-	}
-</script>
 </body>
 </html>

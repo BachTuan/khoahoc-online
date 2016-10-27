@@ -122,7 +122,7 @@ footer {
 }
 #dangnhap, #dangky {
 	width: 400px;
-	height: 350px;
+	height: 375px;
 	border: 1px solid #ccc;
 	-webkit-box-shadow: 0px 0px 5px #ccc;
 	-moz-box-shadow: 0px 0px 5px #ccc;
@@ -136,12 +136,24 @@ footer {
 	display: none;
 	border: 3px outset #006064;
 }
+.fb-gg {
+	width: 80%;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	color: white;
+	font-weight: bold;
+	margin: auto;
+	margin-top: 5px;
+	cursor: pointer;
+}
 .nhapvao {
 	width: 350px;
 	height: 30px;
 	margin-top: 10px;
 }
 .nutbam {
+	margin-top: 15px;
 	width: 150px;
 	height: 30px;
 	color: #004d40;
