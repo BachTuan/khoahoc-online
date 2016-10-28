@@ -384,6 +384,10 @@
         width: 60%;
         font-size: 12px;
     }
+    #h1-help {
+      font-size: 30px;
+      color: #002b72;
+    }
 }
 @media only screen and (min-width: 420px) and (max-width: 579px) {
     .body-home-son {
@@ -453,6 +457,10 @@
     #giangvien {
         display: none;
     }
+    #h1-help {
+      font-size: 25px;
+      color: #002b72;
+    }
 }
 @media only screen and (max-width: 419px) {
     #banner {
@@ -520,5 +528,9 @@
     }
     #giangvien {
         display: none;
+    }
+    #h1-help {
+      font-size: 20px;
+      color: #002b72;
     }
 }

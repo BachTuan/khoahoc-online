@@ -258,8 +258,7 @@ section {
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	#menukhoahoc {
-		width: 15%;
-		float: right;
+		width: 100%;
 	}
 	#thanhtoan-khoahoc table th {
 		font-size: 14px;
@@ -268,8 +267,8 @@ section {
 		font-size: 12px;
 	}
 	#danhsachkhoahoc {
-		width: 85%;
-		float: right;
+		width: 100%;
+		margin: auto;
 	}
 	#danhsachkhoahoc .box-relative {
 		width: 46%;
@@ -291,12 +290,11 @@ section {
 }
 @media only screen and (max-width: 479px) {
 	#menukhoahoc {
-		width: 25%;
-		float: right;
+		width: 100%;
 	}
 	#danhsachkhoahoc {
-		width: 75%;
-		float: right;
+		width: 100%;
+		margin: auto;
 	}
 	#danhsachkhoahoc .box-relative {
 		width: 90%;
