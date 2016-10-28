@@ -70,9 +70,6 @@ header {
 	cursor: pointer;
 	display: none;
 }
-#toggle:hover {
-	background: #00695c;
-}
 .nav {
 	max-width: 1000px;
 	min-width: 320px;
